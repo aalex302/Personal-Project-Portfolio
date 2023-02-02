@@ -1,4 +1,4 @@
-import pandas
+
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By	
@@ -7,12 +7,6 @@ from selenium.webdriver.support import expected_conditions as ec
 from bs4 import BeautifulSoup
 import requests
 
-excel = r'...\credenciales.xlsx'
-
-df = pandas.read_excel(excel, sheet_name='Hoja1')
-
-user = str(df['usuario'][1])
-psw = df ['contraseña'][1]
 
 link = input("Pegue el link de youtube a descargar: ")
 print("""Opciones de descarga:
